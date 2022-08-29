@@ -26,10 +26,10 @@ const AddTransactions = () => {
                 <div className="input__row">
 
                 <label htmlFor="text">text</label>
-                <input type="text" id='text' onChange={(e)=>setText(e.target.value)} value={text} />
+                <input type="text" id='text' onChange={(e)=>setText(e.target.value)} value={text} placeholder='enter a product' />
 
                 <label htmlFor="amount">  amount<br />(negative - expence, possitive - income)</label>
-                <input type="number" id='amount' onChange={(e)=>setAmount(e.target.value)} value={amount}/>
+                <input type="number" id='amount' onChange={(e)=>setAmount(e.target.value)} value={amount} placeholder="enter a value"/>
                 
                 </div>
                 <button

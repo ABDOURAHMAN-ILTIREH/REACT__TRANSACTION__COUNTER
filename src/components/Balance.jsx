@@ -6,8 +6,8 @@ const Balance = () => {
   const {transaction} = useContext(GlobalContext)
 
   const amount = transaction.map( itme => itme.amount);
-  const income = amount.filter( itme => itme > 0).reduce( (acc, itme) => (acc + itme),0).toFixed(2);
-  const expance = (amount.filter( itme => itme < 0).reduce( (acc, itme) => (acc + itme),0)* -1).toFixed(2);
+  const income = amount.filter( itme => itme > 0).reduce( (acc, itme) => (acc + itme),0)
+  const expance = (amount.filter( itme => itme < 0).reduce( (acc, itme) => (acc + itme),0)* -1)
   return (
     <div className="balance">
         <div className="wrapper__counter">

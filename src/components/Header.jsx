@@ -5,7 +5,7 @@ import { GlobalContext } from '../context/globalContext'
 const Header = () => {
   const {transaction} = useContext(GlobalContext)
   const amount = transaction.map( itme => itme.amount)
-  const total = amount.reduce((acc, item) => (acc + item),0).toFixed(2)
+  const total = amount.reduce((acc, item) => (acc + item),0)
 
   return (
     <>
